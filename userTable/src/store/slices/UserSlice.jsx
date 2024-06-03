@@ -29,5 +29,9 @@ const userSlice = createSlice({
 
 console.log(userSlice.actions);
 
+// if action is supposed to be handled by one reducer, use reducers
+// if action is supposed to be handles by multiple reducers, use extraReducers
+// also learn createAction function.
+
 export default userSlice.reducer ;
 export const { addUser, removeUser, deleteUsers } = userSlice.actions;
